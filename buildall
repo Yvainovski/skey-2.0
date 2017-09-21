@@ -1,0 +1,44 @@
+#!/bin/sh
+# define src dir
+# Idea of this file mainly from  Erez Zadok <ezk AT cs.sunysb.edu>
+if test $# = 1  ; then
+	BUILD_PATH=$1
+else
+	BUILD_PATH=$HOME/BUILD
+	echo 'Building to the default path: \$HOME/BUILD'
+fi
+
+SRCDIR=`pwd`
+
+# define unique system string
+SYS=`$SRCDIR/build-aux/config.guess`
+# define and create build dir
+BUILD_DIR=$BUILD_PATH/skey-2.0/$SYS
+mkdir -p $BUILD_DIR
+
+
+# change to build dir before config/make
+cd $BUILD_DIR
+echo "in $BUILD_DIR"
+$SRCDIR/configure --prefix=$BUILD_DIR/
+
+echo ' ' > $SRCDIR/skey-2.0/addPath
+#chmod 755 $SRCDIR/skey-2.0/addPath
+echo "export PATH=$PATH:$BUILD_DIR/bin" >> $SRCDIR/skey-2.0/addPath
+
+echo "*********************************************************************"
+source  $SRCDIR/skey-2.0/addPath
+
+# when configure finishes, it should produce a config.h and Makefile(s)
+# in local build dir
+
+make clean
+if test $? != 0 ; then
+    echo "make clean failed"
+    exit 1
+fi
+make || exit $?
+
+make install
+
+echo "done"

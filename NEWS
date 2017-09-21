@@ -1,0 +1,19 @@
+---------------
+NEW FEATURES
+---------------
+Added more flags for key. Flags should be used before [count][password]
+[-h] : only print usage message.
+[-v] : print current version.
+[-d] : Increase debugging level by one.  May be specified multiple times.
+Debugging level 1 will show entry/exit point of every function.
+Level 2 will also show return values about to be returned from
+functions.  Level 3 will also show arguments passed to functions.
+If declare more than 3 times, it will be the same as Level 3.
+
+buildall script will automatically build and install the program.
+Also buildall can take a parameter, which is the path you want to build
+
+---------------
+BUG FIXS
+---------------
+See ChangeLog

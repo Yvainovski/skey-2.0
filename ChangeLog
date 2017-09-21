@@ -1,0 +1,37 @@
+2016-05-02  Yifang Cao <Yifang.Cao@stonybrook.edu>
+  
+	* modify man page for key.1
+	# modify AUTHORS
+	* re-orgnize the skey folders/files
+
+2016-05-03  Yifang Cao <Yifang.Cao@stonybrook.edu>
+  
+	* add configure.ac
+	* rename some check definations
+
+2016-05-04  Yifang Cao <Yifang.Cao@stonybrook.edu>
+  	
+  	* add Makefile.am to all proper folders
+	* re-orgnize the skey folders/files agin
+
+2016-05-05  Yifang Cao <Yifang.Cao@stonybrook.edu>
+  	
+  	* add buildall script to build and install automatically
+  	* updated AUTHORS file
+  	* add keytest.sh test file, now support make check
+
+2016-05-06  Yifang Cao <Yifang.Cao@stonybrook.edu>
+	
+	*add addPath test file, so that buildall will add 
+	*$HOME to $PATH automatically
+	*modify NEWS file
+
+2016-05-06  Yifang Cao <Yifang.Cao@stonybrook.edu>
+
+	*add knowlegement for buidall script
+	*fix keytest.sh bugs
+
+2016-05-07  Yifang Cao <Yifang.Cao@stonybrook.edu>
+
+	*fix keysubr.h bugs
+	*fix md4.h bugs 

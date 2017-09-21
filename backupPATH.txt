@@ -1,0 +1,29 @@
+PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/xiuyang/bin:/usr/local/git/bin:/home/yifcao/bin
+
+
+
+
+
+
+
+
+
+
+DIST_SOURCES =	skey-2.0/bin/Makefile.am skey-2.0/include/Makefile.am \
+				skey-2.0/lib/Makefile.am skey-2.0/m4/NOTES	\
+				skey-2.0/man/Makefile.am skey-2.0/other/Makefile.am \
+				skey-2.0/keytest.sh skey-2.0/addPath.sh 	\
+				skey-2.0/skey-src/man/key.1 \
+				skey-2.0/skey-src/man/keyinit.1 \
+				skey-2.0/skey-src/man/keysh.1 \
+				skey-2.0/skey-src/man/skey.1 \
+				skey-2.0/skey-src/src/md4.c \
+				skey-2.0/skey-src/src/md4.h \
+				skey-2.0/skey-src/src/put.c \
+				skey-2.0/skey-src/src/skey.c \
+				skey-2.0/skey-src/src/skey.h \
+				skey-2.0/skey-src/src/skeyinit.c \
+				skey-2.0/skey-src/src/skeylogin.c \
+				skey-2.0/skey-src/src/skeysh.c \
+				skey-2.0/skey-src/src/skeysubr.c \
+				skey-2.0/skey-src/src/sysv_shadow.h
